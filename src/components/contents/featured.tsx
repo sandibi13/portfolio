@@ -1,7 +1,19 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import { AnimationContainer } from "../utils/animation-container";
 
 export const Featured = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <div className="w-full relative pb-20 py-10 z-40">
       <AnimationContainer
