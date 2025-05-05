@@ -2,18 +2,17 @@ import { defineDocumentType, makeSource } from "contentlayer/source-files";
 
 export const Blog = defineDocumentType(() => ({
   name: "Blog",
-  filePathPattern: `blogs/**/*.mdx`,
+  filePathPattern: `blogs/**/*.md`,
   fields: {
     title: { type: "string", required: true },
     description: { type: "string", required: true },
     date: { type: "date" },
   },
-  computedFields: {},
 }));
 
 export const Project = defineDocumentType(() => ({
   name: "Project",
-  filePathPattern: `projects/**/*.mdx`,
+  filePathPattern: `projects/**/*.md`,
   fields: {
     title: { type: "string", required: true },
     description: { type: "string", required: true },
@@ -21,19 +20,17 @@ export const Project = defineDocumentType(() => ({
     url: { type: "string" },
     repository: { type: "string" },
   },
-  computedFields: {},
 }));
 
 export const Review = defineDocumentType(() => ({
   name: "Review",
-  filePathPattern: `reviews/**/*.mdx`,
+  filePathPattern: `reviews/**/*.md`,
   fields: {
     name: { type: "string", required: true },
     text: { type: "string", required: true },
     rating: { type: "number", required: true },
-    company: { type: "string", required: true },
+    country: { type: "string", required: true },
   },
-  computedFields: {},
 }));
 
 export default makeSource({

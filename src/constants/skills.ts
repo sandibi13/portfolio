@@ -19,12 +19,12 @@ export const skills = [
       "Astro",
       "Flask",
       "React Native",
-      "Tauri",
+      "Electron",
     ],
   },
   {
     title: "Databases & ORMs",
-    stack: ["PostgreSQL", "MongoDB", "Supabase", "Prisma", "Drizzle", "Redis"],
+    stack: ["PostgreSQL", "MongoDB", "Prisma", "Drizzle", "Redis"],
   },
   {
     title: "Software & Tools",

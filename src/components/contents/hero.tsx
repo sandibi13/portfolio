@@ -122,7 +122,7 @@ export const Hero = () => {
         className="flex flex-col items-center justify-center my-32"
       >
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10 w-full lg:max-w-screen-md">
-          {[10, 2, 4].map((value, index) => (
+          {[8, 2, 4].map((value, index) => (
             <AnimationContainer
               key={index}
               animation="scale"

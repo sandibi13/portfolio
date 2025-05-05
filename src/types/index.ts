@@ -17,5 +17,5 @@ export interface ReviewProps {
   name: string;
   text: string;
   rating: number;
-  company: string;
+  country: string;
 }
