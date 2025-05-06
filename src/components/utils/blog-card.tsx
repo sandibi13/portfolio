@@ -1,10 +1,11 @@
 import React from "react";
 import { BlogProps } from "@/types";
+import { AnimationContainer } from "./animation-container";
 
 export const BlogCard = ({ blog }: { blog: BlogProps }) => {
   return (
-    <div>
+    <AnimationContainer>
       <h1>Blog Card</h1>
-    </div>
+    </AnimationContainer>
   );
 };
