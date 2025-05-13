@@ -8,12 +8,8 @@ export default {
       typography: {
         DEFAULT: {
           css: {
-            "code::before": {
-              content: '""',
-            },
-            "code::after": {
-              content: '""',
-            },
+            "code::before": { content: '""' },
+            "code::after": { content: '""' },
           },
         },
         quoteless: {
@@ -39,43 +35,9 @@ export default {
       },
       keyframes: {
         "fade-in": {
-          "0%": {
-            opacity: "0%",
-          },
-          "75%": {
-            opacity: "0%",
-          },
-          "100%": {
-            opacity: "100%",
-          },
-        },
-        "fade-left": {
-          "0%": {
-            transform: "translateX(100%)",
-            opacity: "0%",
-          },
-
-          "30%": {
-            transform: "translateX(0%)",
-            opacity: "100%",
-          },
-          "100%": {
-            opacity: "0%",
-          },
-        },
-        "fade-right": {
-          "0%": {
-            transform: "translateX(-100%)",
-            opacity: "0%",
-          },
-
-          "30%": {
-            transform: "translateX(0%)",
-            opacity: "100%",
-          },
-          "100%": {
-            opacity: "0%",
-          },
+          "0%": { opacity: "0%" },
+          "75%": { opacity: "0%" },
+          "100%": { opacity: "100%" },
         },
         title: {
           "0%": {
@@ -83,18 +45,19 @@ export default {
             "letter-spacing": "0.25em",
             opacity: "0",
           },
-          "25%": {
-            "line-height": "0%",
-            opacity: "0%",
-          },
-          "80%": {
-            opacity: "100%",
-          },
-
-          "100%": {
-            "line-height": "100%",
-            opacity: "100%",
-          },
+          "25%": { "line-height": "0%", opacity: "0%" },
+          "80%": { opacity: "100%" },
+          "100%": { "line-height": "100%", opacity: "100%" },
+        },
+        "fade-left": {
+          "0%": { transform: "translateX(100%)", opacity: "0%" },
+          "30%": { transform: "translateX(0%)", opacity: "100%" },
+          "100%": { opacity: "0%" },
+        },
+        "fade-right": {
+          "0%": { transform: "translateX(-100%)", opacity: "0%" },
+          "30%": { transform: "translateX(0%)", opacity: "100%" },
+          "100%": { opacity: "0%" },
         },
       },
     },
