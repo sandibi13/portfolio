@@ -33,7 +33,7 @@ export const ReviewCard = ({ review }: { review: ReviewProps }) => {
           {renderStars(review.rating)}
         </div>
         <p className="text-neutral-700 dark:text-neutral-300 flex-grow mt-4 text-sm text-justify md:text-lg lg:text-xl leading-relaxed">
-          {review.text}
+          "{review.text}"
         </p>
         <div className="mt-auto">
           <h4 className="text-lg text-foreground font-semibold">
